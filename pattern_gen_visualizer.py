@@ -536,7 +536,7 @@ ax_real = fig.add_axes([0.55, 0.25, 0.45, 0.72], projection='3d')
 
 
 ax_img = fig.add_axes([0.05, 0.25, 0.45, 0.72])
-img = ax_img.imshow(np.ones((target_pattern_dimension_pixels, target_pattern_dimension_pixels)), vmin=0, vmax=1)
+img = ax_img.imshow(np.ones((target_pattern_dimension_pixels, target_pattern_dimension_pixels)), vmin=0, vmax=1, cmap='viridis')
 fig.colorbar(img, ax=ax_img)
 
 ax_scale    = plt.axes([0.1, 0.17, 0.4, 0.03])
